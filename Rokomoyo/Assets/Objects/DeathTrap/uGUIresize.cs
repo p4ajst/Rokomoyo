@@ -17,22 +17,22 @@ public class uGUIresize : MonoBehaviour
     {
         width = 0;
         height = 0;
-        pe.Stop();
+        //pe.Stop();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("up"))
+        //if (Input.GetKey("up"))
         {
             foreach (Transform explosionPos in thunderPoints)
             {
                 GameObject thunder = Instantiate (thunderParticle,               // パーティクルオブジェクトの生成
                     explosionPos.position, transform.rotation) as GameObject;
-                Destroy(thunder, 5f);                                             // ５秒後に消す
+                Destroy(thunder, 3f);                                             // ５秒後に消す
             }
         }
-        if (Input.GetKey("down"))
+        //if (Input.GetKey("down"))
         {
                height += 1;
         }

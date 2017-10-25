@@ -57,6 +57,7 @@ GameObject:
   - component: {fileID: 33690084736020218}
   - component: {fileID: 135434861489327494}
   - component: {fileID: 23555032752086076}
+  - component: {fileID: 114106578285525216}
   m_Layer: 0
   m_Name: DeathTrap
   m_TagString: Untagged
@@ -229,6 +230,17 @@ MonoBehaviour:
   thunderParticle: {fileID: 1576701179832402}
   thunderPoints:
   - {fileID: 4771951831878212}
+--- !u!114 &114106578285525216
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1873099160826278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b42c0bd2a586b041b1348a14e7100f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135331957694674474
 SphereCollider:
   m_ObjectHideFlags: 1
