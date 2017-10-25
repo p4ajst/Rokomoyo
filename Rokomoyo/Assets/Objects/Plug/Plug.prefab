@@ -156,6 +156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4992516719674676}
   - component: {fileID: 95672676187077654}
+  - component: {fileID: 114908550616874526}
   m_Layer: 0
   m_Name: Plug
   m_TagString: Untagged
@@ -595,6 +596,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114908550616874526
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1739889929986606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0320d1b5efb9a1349a38e50fdda1c05e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135541560836264984
 SphereCollider:
   m_ObjectHideFlags: 1
