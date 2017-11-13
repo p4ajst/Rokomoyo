@@ -15,7 +15,7 @@ public class chara : MonoBehaviour {
     //移動する時間
     float DeltaTime;
     //charaの状態（０動いている　１待機中）
-    int a ;
+    public int a ;
     int times;
     bool round;
    // Vector3 PlayerPos;
@@ -107,7 +107,7 @@ public class chara : MonoBehaviour {
         float time = MoveTime / MoveLengs;
         this.transform.position = Vector3.Lerp(this.gameObject.transform.position, tage_pos, time);
         //進む方向へ向く処理
-        Vector3 view_vec = MusicCordinate - this.gameObject.transform.position;
+        Vector3 view_vec = new Vector3(MusicCordinate.x,this.gameObject.transform.position.y,MusicCordinate.z) - this.gameObject.transform.position;
         Quaternion newRote = Quaternion.LookRotation(view_vec);
         this.gameObject.transform.rotation = Quaternion.Slerp(this.transform.rotation,newRote,0.2f);
        
@@ -128,11 +128,11 @@ public class chara : MonoBehaviour {
         Vector3 bAway = new Vector3(this.transform.position.x, this.transform.position.y, -3);
         //座標が離れる音と被っているかどうか
         //被っている場合
-        if (MusicCordinate==this.transform.position)
+        if (MusicCordinate.x==this.transform.position.x&& MusicCordinate.z == this.transform.position.z)
         {
             Quaternion angle = this.transform.rotation;
             float rote = angle.eulerAngles.y;
-            if(rote <= 1 && rote >= -1)
+            if(rote <= 2 && rote >= -2)
             {
                 //離れる移動の処理
                 MoveLengs = Vector3.Distance(this.transform.position, fAway);
@@ -140,7 +140,7 @@ public class chara : MonoBehaviour {
                 this.transform.position = Vector3.Lerp(this.transform.position, fAway, time);
                 
             }
-            else if(rote <= 91 && rote >= 89)
+            else if(rote <= 92 && rote >= 88)
             {
                 //離れる移動の処理
                 MoveLengs = Vector3.Distance(this.transform.position, rAway);
@@ -148,7 +148,7 @@ public class chara : MonoBehaviour {
                 this.transform.position = Vector3.Lerp(this.transform.position, rAway, time);
                 
             }
-            else if (rote <= 181&&rote >= 179)
+            else if (rote <= 182&&rote >= 178)
             {
                 //離れる移動の処理
                 MoveLengs = Vector3.Distance(this.transform.position, bAway);
@@ -156,7 +156,7 @@ public class chara : MonoBehaviour {
                 this.transform.position = Vector3.Lerp(this.transform.position, bAway, time);
                 
             }
-            else if(rote <= 271 && rote >= 269)
+            else if(rote <= 272 && rote >= 268)
             {
                 //離れる移動の処理
                 MoveLengs = Vector3.Distance(this.transform.position, lAway);

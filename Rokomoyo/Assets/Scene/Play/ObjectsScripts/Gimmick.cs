@@ -30,7 +30,7 @@ public class Gimmick : MonoBehaviour {
             gameObject.transform.position.x + 0.25 > pos_x - 0.25 &&
             gameObject.transform.position.z - 0.25 < pos_z + 0.25 &&
             gameObject.transform.position.z + 0.25 > pos_z - 0.25 &&
-            player.GetComponent<test>().status == 1)
+            player.GetComponent<chara>().a == 1)
         {
             //当たっていたらtrueを返す
             return true;
