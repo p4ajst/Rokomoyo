@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+/// <summary>
+/// 音符
+/// </summary>
 public class Notes : MonoBehaviour
 {
 
@@ -20,14 +23,24 @@ public class Notes : MonoBehaviour
         AWAY,
     };
 
-    // 音の種類
+    /// <summary>
+    /// 音の種類
+    /// </summary>
     public MusicType type = MusicType.NONE;
-    // 管理者を記憶
+
+    /// <summary>
+    /// 管理者を記憶
+    /// </summary>
     SoundManager soundManager = null;
 
-    // 曲情報
+    /// <summary>
+    /// 曲情報
+    /// </summary>
     private MusicList.MusicData soundData;
 
+    /// <summary>
+    /// 曲のデータのプロパティ
+    /// </summary>
     public MusicList.MusicData SoundData
     {
         // 取得
@@ -37,6 +50,9 @@ public class Notes : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// キャラクターの管理のクラスのインスタンス
+    /// </summary>
     CharacterManager charaManager;
 
     /// <summary>
@@ -58,20 +74,24 @@ public class Notes : MonoBehaviour
     /// <param name="data">クリックイベント</param>
     public void ClickNotes(BaseEventData data)
     {
+        // 音符を設定
         charaManager.SetNotes(this.gameObject.GetComponent<Notes>());
-        Debug.Log("くりっくされたぉ～。V（・~・）V");
         // 音を再生させる
         if(soundManager.ChangeMusic(type, soundData))
         {
+            // 音楽の再生
             soundManager.PlayMusic();
         }
         else
         {
+            // 音楽の停止
             soundManager.StopMusic();
         }
     }
 
-
+    /// <summary>
+    /// シーン開始時に実行される関数
+    /// </summary>
     private void Awake()
     {
         GameObject obj =  GameObject.Find("CharacterManager");

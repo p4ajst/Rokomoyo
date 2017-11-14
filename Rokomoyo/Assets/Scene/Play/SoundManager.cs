@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
+/// <summary>
+/// 音符の管理を制御する
+/// </summary>
 public class SoundManager : Singleton<SoundManager>
 {
     // 曲を再生するスピーカー
@@ -35,8 +37,6 @@ public class SoundManager : Singleton<SoundManager>
         // ループを許可する
         music.loop = true;
     }
-
-
 
     /// <summary>
     /// 重複しない乱数
@@ -171,6 +171,9 @@ public class SoundManager : Singleton<SoundManager>
     }
     
 
+    /// <summary>
+    /// 音符の反転
+    /// </summary>
     public void FlipNote()
     {
         if(nowPlay == Notes.MusicType.NONE)
@@ -187,7 +190,9 @@ public class SoundManager : Singleton<SoundManager>
         }
     }
 
-
+    /// <summary>
+    /// シーン開始時に最初に実行される関数
+    /// </summary>
     private void Awake()
     {
         // 自分のポインタはシングルトンでなかったら
