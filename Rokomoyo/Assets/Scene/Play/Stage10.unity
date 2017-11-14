@@ -2529,7 +2529,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 853958707}
+  - {fileID: 1092687233}
   - {fileID: 702805835}
   m_Father: {fileID: 0}
   m_RootOrder: 11
@@ -3303,6 +3303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Charge: 0
+  a: 0
 --- !u!23 &629619453
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4098,10 +4099,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e976fa0048f7b804e9449d80e06f31b6, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &853958707 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 853958706}
 --- !u!1 &858492848
 GameObject:
   m_ObjectHideFlags: 0
@@ -4583,6 +4580,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4090871766308990, guid: 766a9e07fdad3cd4fabbb10c5012fe6a,
     type: 2}
   m_PrefabInternal: {fileID: 1050534462}
+--- !u!4 &1092687233 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4766883173336494, guid: e976fa0048f7b804e9449d80e06f31b6,
+    type: 2}
+  m_PrefabInternal: {fileID: 853958706}
 --- !u!1 &1108116074
 GameObject:
   m_ObjectHideFlags: 0

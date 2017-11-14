@@ -26,9 +26,9 @@ public class CharacterManager : Singleton<CharacterManager>
     GameObject player = null;
 
     /// <summary>
-    /// 
+    /// 音符の設定
     /// </summary>
-    /// <param name="notes"></param>
+    /// <param name="notes">音符のインスタンス</param>
     public void SetNotes(Notes notes)
     {
         note = notes;
