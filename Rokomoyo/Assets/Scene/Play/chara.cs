@@ -15,7 +15,7 @@ public class chara : MonoBehaviour {
     //移動する時間
     float DeltaTime;
     //charaの状態（０動いている　１待機中）
-    int a ;
+    public int a ;
     int times;
     bool round;
    // Vector3 PlayerPos;

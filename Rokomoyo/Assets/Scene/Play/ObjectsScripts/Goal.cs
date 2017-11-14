@@ -10,6 +10,7 @@ public class Goal : Trap {
     GameObject key;
     bool goalflag = false;
     static int x = 2;
+    GameObject sound;
 
 	// Use this for initialization
 	override protected void Start () {
@@ -30,9 +31,6 @@ public class Goal : Trap {
             //シーン遷移する
             if (key == null)
             {
-                //x = 2;
-                //SceneManager.LoadScene("Stage"+x.ToString());
-                //x++;
                 Stage.ChangeStage();
             }
         }
