@@ -4,18 +4,16 @@ using UnityEngine;
 
 public class StereoPlug : Gimmick {
 
-    GameObject obj = null;
-    SoundManager sound = null;
     bool flag = false;
-
+    GameObject obj = null;
+    Notes note;
 	// Use this for initialization
 	void Start () {
         base.Start();
-        obj = GameObject.Find("SoundManager");
-
-        sound = obj.GetComponent<SoundManager>();
+        obj = GameObject.Find("AttractSounds");
+        note = obj.GetComponent<Notes>();
     }
-	
+
 	// Update is called once per frame
 	void Update () {
         base.Update();
@@ -26,7 +24,7 @@ public class StereoPlug : Gimmick {
             Debug.Log("のってる");
             flag = true;
             //音符の種類を変える処理
-            sound.FlipNote();
+            note.FlipNote();
             ////音符の種類を変える処理
             //sound.FlipNote();
         }

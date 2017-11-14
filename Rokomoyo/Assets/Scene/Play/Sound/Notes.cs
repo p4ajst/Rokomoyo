@@ -90,6 +90,25 @@ public class Notes : MonoBehaviour
     }
 
     /// <summary>
+    /// 音符の反転
+    /// </summary>
+    public void FlipNote()
+    {
+        if (type == MusicType.NONE)
+        {
+            return;
+        }
+        if (type == MusicType.ATTRACT)
+        {
+            type = MusicType.AWAY;
+        }
+        if (type == MusicType.AWAY)
+        {
+            type = MusicType.ATTRACT;
+        }
+    }
+
+    /// <summary>
     /// シーン開始時に実行される関数
     /// </summary>
     private void Awake()

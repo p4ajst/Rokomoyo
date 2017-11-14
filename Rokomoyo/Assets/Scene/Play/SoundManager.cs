@@ -180,24 +180,24 @@ public class SoundManager : Singleton<SoundManager>
     }
     
 
-    /// <summary>
-    /// 音符の反転
-    /// </summary>
-    public void FlipNote()
-    {
-        if(nowPlay == Notes.MusicType.NONE)
-        {
-            return;
-        }
-        if(nowPlay == Notes.MusicType.ATTRACT)
-        {
-            nowPlay = Notes.MusicType.AWAY;
-        }
-        if(nowPlay == Notes.MusicType.AWAY)
-        {
-            nowPlay = Notes.MusicType.ATTRACT;
-        }
-    }
+    ///// <summary>
+    ///// 音符の反転
+    ///// </summary>
+    //public void FlipNote()
+    //{
+    //    if(nowPlay == Notes.MusicType.NONE)
+    //    {
+    //        return;
+    //    }
+    //    if(nowPlay == Notes.MusicType.ATTRACT)
+    //    {
+    //        nowPlay = Notes.MusicType.AWAY;
+    //    }
+    //    if(nowPlay == Notes.MusicType.AWAY)
+    //    {
+    //        nowPlay = Notes.MusicType.ATTRACT;
+    //    }
+    //}
 
     /// <summary>
     /// シーン開始時に最初に実行される関数
