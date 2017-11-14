@@ -7,22 +7,31 @@ using UnityEngine;
 /// </summary>
 public class SoundManager : Singleton<SoundManager>
 {
-    // 曲を再生するスピーカー
+    /// <summary>
+    /// 曲を再生するスピーカー
+    /// </summary>
     public AudioSource music = null;
 
-    // どちらの曲を再生するか
+    /// <summary>
+    /// どちらの曲を再生するか
+    /// </summary>
     public Notes.MusicType nowPlay = Notes.MusicType.NONE;
 
-
-    // 曲の情報
+    /// <summary>
+    /// 曲の情報
+    /// </summary>
     public MusicList attractMusic = null;
     public MusicList awayMusic = null;
 
-    // 設定済み曲を格納する配列
+    /// <summary>
+    /// 設定済み曲を格納する配列
+    /// </summary>
     List<AudioClip> usedAttractClips = new List<AudioClip>();
     List<AudioClip> usedAwayClips = new List<AudioClip>();
 
-    // 曲データの一時保存
+    /// <summary>
+    /// 曲データの一時保存
+    /// </summary>
     AudioClip temp = null;
 
     /// <summary>
@@ -212,6 +221,7 @@ public class SoundManager : Singleton<SoundManager>
     // Use this for initialization
     void Start ()
     {
+
         // AudioSourceの初期化
         InitAudioSource();
     }
