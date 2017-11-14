@@ -128,7 +128,7 @@ public class chara : MonoBehaviour {
         Vector3 bAway = new Vector3(this.transform.position.x, this.transform.position.y, -3);
         //座標が離れる音と被っているかどうか
         //被っている場合
-        if (MusicCordinate==this.transform.position)
+        if (MusicCordinate.x==this.transform.position.x&& MusicCordinate.z == this.transform.position.z)
         {
             Quaternion angle = this.transform.rotation;
             float rote = angle.eulerAngles.y;
