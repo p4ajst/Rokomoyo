@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Plug : Gimmick {
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    override protected void Start () {
         base.Start();
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    override protected void Update () {
         base.Update();
 
         //ギミックの上にいるなら

@@ -28,7 +28,7 @@ public class Goal : Trap {
         if (base.OnFloor() == true)
         {
             //シーン遷移する
-            if (key == null)
+            if (key.active == false)
             {
                 //x = 2;
                 //SceneManager.LoadScene("Stage"+x.ToString());
