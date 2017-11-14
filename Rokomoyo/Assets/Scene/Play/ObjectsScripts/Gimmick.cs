@@ -14,13 +14,15 @@ public class Gimmick : MonoBehaviour {
     // Use this for initialization
     virtual protected void Start()
     {
-        //プレイヤーオブジェクトを取得する
-        player = GameObject.Find("Player");
+
     }
 
     //プレイヤーが同じ座標にいるかチェックする
     public bool OnFloor()
     {
+        //プレイヤーオブジェクトを取得する
+        player = GameObject.Find("Player");
+
         //プレイヤーの座標を取得する
         pos_x = player.transform.position.x;
         pos_z = player.transform.position.z;
@@ -30,7 +32,7 @@ public class Gimmick : MonoBehaviour {
             gameObject.transform.position.x + 0.25 > pos_x - 0.25 &&
             gameObject.transform.position.z - 0.25 < pos_z + 0.25 &&
             gameObject.transform.position.z + 0.25 > pos_z - 0.25 &&
-            player.GetComponent<test>().status == 1)
+            player.GetComponent<chara>().a == 1)
         {
             //当たっていたらtrueを返す
             return true;
