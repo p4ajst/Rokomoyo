@@ -14,6 +14,9 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/feature/FixingCharacters
     x: -1920
     y: 43
     width: 1920
@@ -43,10 +46,17 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 216
     y: 0
     width: 279
     height: 444
+=======
+    x: 202
+    y: 0
+    width: 317
+    height: 690
+>>>>>>> origin/feature/FixingCharacters
   m_MinSize: {x: 279, y: 71}
   m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 13}
@@ -103,6 +113,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 275
     height: 689
 =======
@@ -111,6 +122,12 @@ MonoBehaviour:
 >>>>>>> 6acf927b88d6746322dd06b8c6d4f37c8ecd4f0c
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+    width: 202
+    height: 690
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+>>>>>>> origin/feature/FixingCharacters
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -131,9 +148,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 444
     width: 1520
     height: 271
+=======
+    y: 690
+    width: 1920
+    height: 297
+>>>>>>> origin/feature/FixingCharacters
   m_MinSize: {x: 230, y: 271}
   m_MaxSize: {x: 10000, y: 10021}
   m_ActualView: {fileID: 12}
@@ -260,9 +283,15 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
     width: 1920
+<<<<<<< HEAD
     height: 689
   m_MinSize: {x: 681, y: 221}
   m_MaxSize: {x: 12006, y: 4021}
+=======
+    height: 690
+  m_MinSize: {x: 683, y: 221}
+  m_MaxSize: {x: 12008, y: 4021}
+>>>>>>> origin/feature/FixingCharacters
   vertical: 0
   controlID: 48
 =======
@@ -287,10 +316,17 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 495
     y: 0
     width: 1025
     height: 444
+=======
+    x: 519
+    y: 0
+    width: 1401
+    height: 690
+>>>>>>> origin/feature/FixingCharacters
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
@@ -322,6 +358,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: -1920
     y: 781
     width: 1920
@@ -332,6 +369,12 @@ MonoBehaviour:
     width: 1520
     height: 250
 >>>>>>> 6acf927b88d6746322dd06b8c6d4f37c8ecd4f0c
+=======
+    x: -1920
+    y: 782
+    width: 1920
+    height: 276
+>>>>>>> origin/feature/FixingCharacters
   m_SearchFilter:
     m_NameFilter: 
     m_ClassNames: []
@@ -345,6 +388,7 @@ MonoBehaviour:
     m_SearchArea: 0
     m_Folders:
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/Resource
   m_ViewMode: 1
   m_StartGridSize: 64
@@ -357,10 +401,18 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scene/Play
 >>>>>>> 6acf927b88d6746322dd06b8c6d4f37c8ecd4f0c
+=======
+    - Assets/Scene/Play/Sound
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Scene/Play/Sound
+>>>>>>> origin/feature/FixingCharacters
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\s152123\Desktop\Rokomoyo-prototype\Rokomoyo-prototype\Rokomoyo
   m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
 <<<<<<< HEAD
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: a42e0000
@@ -372,6 +424,12 @@ MonoBehaviour:
     m_LastClickedID: 9968
     m_ExpandedIDs: 0000000050260000dc260000f0260000aa270000282800003e2800006428000000ca9a3bffffff7f
 >>>>>>> 6acf927b88d6746322dd06b8c6d4f37c8ecd4f0c
+=======
+    scrollPos: {x: 0, y: 141}
+    m_SelectedIDs: 40280000
+    m_LastClickedID: 10304
+    m_ExpandedIDs: 000000004a260000d6260000ea260000aa2700002a280000402800006628000000ca9a3bffffff7f
+>>>>>>> origin/feature/FixingCharacters
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -481,6 +539,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: -1643
     y: 92
     width: 346
@@ -491,6 +550,12 @@ MonoBehaviour:
     width: 275
     height: 423
 >>>>>>> 6acf927b88d6746322dd06b8c6d4f37c8ecd4f0c
+=======
+    x: -1716
+    y: 92
+    width: 313
+    height: 669
+>>>>>>> origin/feature/FixingCharacters
   m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
   m_PreviewResizer:
@@ -521,12 +586,16 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/feature/FixingCharacters
     x: -1920
     y: 92
-    width: 273
-    height: 668
+    width: 200
+    height: 669
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 
     m_LastClickedID: 0
     m_ExpandedIDs: 6294ffff0ed5ffff06d8ffff00000000
@@ -541,6 +610,11 @@ MonoBehaviour:
     m_LastClickedID: 37714
     m_ExpandedIDs: d630ffff4a33fffff636ffff383bfffff23fffff3c43ffff7046ffff1a7fffff5096ffff1afcffff00000000486f00007c760000
 >>>>>>> 6acf927b88d6746322dd06b8c6d4f37c8ecd4f0c
+=======
+    m_SelectedIDs: 62060000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 1afcffff00000000
+>>>>>>> origin/feature/FixingCharacters
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -586,6 +660,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: -1293
     y: 92
     width: 1293
@@ -596,15 +671,27 @@ MonoBehaviour:
     width: 1023
     height: 423
 >>>>>>> 6acf927b88d6746322dd06b8c6d4f37c8ecd4f0c
+=======
+    x: -1399
+    y: 92
+    width: 1399
+    height: 669
+>>>>>>> origin/feature/FixingCharacters
   m_SceneLighting: 1
   lastFramingTime: 575.4511835110308
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -0.1263586, y: 3.0857015, z: -2.6518416}
     speed: 2
     m_Value: {x: -0.1263586, y: 3.0857015, z: -2.6518416}
+=======
+    m_Target: {x: -0.026686113, y: 0.5697906, z: 0.0019075542}
+    speed: 2
+    m_Value: {x: -0.026686113, y: 0.5697906, z: 0.0019075542}
+>>>>>>> origin/feature/FixingCharacters
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -632,6 +719,7 @@ MonoBehaviour:
     m_Value: {x: -0.4264538, y: 0.067732126, z: -0.032044154, w: -0.90140045}
   m_Size:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 7.3577566
     speed: 2
     m_Value: 7.3577566
@@ -640,6 +728,11 @@ MonoBehaviour:
     speed: 2
     m_Value: 6.207671
 >>>>>>> 6acf927b88d6746322dd06b8c6d4f37c8ecd4f0c
+=======
+    m_Target: 7.5036564
+    speed: 2
+    m_Value: 7.5036564
+>>>>>>> origin/feature/FixingCharacters
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -673,6 +766,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: -1293
     y: 92
     width: 1293
@@ -683,6 +777,12 @@ MonoBehaviour:
     width: 1023
     height: 423
 >>>>>>> 6acf927b88d6746322dd06b8c6d4f37c8ecd4f0c
+=======
+    x: -1399
+    y: 92
+    width: 1399
+    height: 669
+>>>>>>> origin/feature/FixingCharacters
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
   m_Stats: 0
@@ -691,10 +791,17 @@ MonoBehaviour:
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -511.5
     m_HBaseRangeMax: 511.5
     m_VBaseRangeMin: -203
     m_VBaseRangeMax: 203
+=======
+    m_HBaseRangeMin: -699.5
+    m_HBaseRangeMax: 699.5
+    m_VBaseRangeMin: -326
+    m_VBaseRangeMax: 326
+>>>>>>> origin/feature/FixingCharacters
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -711,25 +818,43 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
+<<<<<<< HEAD
       width: 1023
       height: 406
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 511.5, y: 203}
+=======
+      width: 1399
+      height: 652
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 699.5, y: 326}
+>>>>>>> origin/feature/FixingCharacters
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -511.5
       y: -203
       width: 1023
       height: 406
+=======
+      x: -699.5
+      y: -326
+      width: 1399
+      height: 652
+>>>>>>> origin/feature/FixingCharacters
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 1023, y: 423}
+=======
+  m_LastWindowPixelSize: {x: 1399, y: 669}
+>>>>>>> origin/feature/FixingCharacters
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -756,6 +881,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: -1920
     y: 781
     width: 1920
@@ -766,3 +892,9 @@ MonoBehaviour:
     width: 1520
     height: 250
 >>>>>>> 6acf927b88d6746322dd06b8c6d4f37c8ecd4f0c
+=======
+    x: -1920
+    y: 782
+    width: 1920
+    height: 276
+>>>>>>> origin/feature/FixingCharacters
