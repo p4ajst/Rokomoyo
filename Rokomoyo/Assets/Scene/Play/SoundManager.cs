@@ -171,6 +171,23 @@ public class SoundManager : Singleton<SoundManager>
     }
     
 
+    public void FlipNote()
+    {
+        if(nowPlay == Notes.MusicType.NONE)
+        {
+            return;
+        }
+        if(nowPlay == Notes.MusicType.ATTRACT)
+        {
+            nowPlay = Notes.MusicType.AWAY;
+        }
+        if(nowPlay == Notes.MusicType.AWAY)
+        {
+            nowPlay = Notes.MusicType.ATTRACT;
+        }
+    }
+
+
     private void Awake()
     {
         // 自分のポインタはシングルトンでなかったら
