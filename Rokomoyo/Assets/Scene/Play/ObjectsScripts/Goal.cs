@@ -29,7 +29,7 @@ public class Goal : Trap {
         if (base.OnFloor() == true)
         {
             //シーン遷移する
-            if (key == null)
+            if (key.active == false)
             {
                 Stage.ChangeStage();
             }

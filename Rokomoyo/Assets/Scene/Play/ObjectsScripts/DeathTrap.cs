@@ -10,8 +10,8 @@ public class DeathTrap : Trap {
     GameObject start;
     GameObject microUSB;
 
-	// Use this for initialization
-	override protected void Start () {
+    // Use this for initialization
+    override protected void Start () {
         //基底クラスのStart関数
         base.Start();
 
@@ -29,10 +29,11 @@ public class DeathTrap : Trap {
         //トラップの上にいるなら
         if (base.OnFloor() == true)
         {
-            Debug.Log("当たっています");
-
             //プレイヤーの座標をスタートの座標にする
             player.transform.position = start.transform.position;
+
+            //鍵をアクティブにする
+            GameObject.Find("Key").transform.Find("Key").gameObject.SetActive(true);
         }
 
         //マイクロUSBを確認しフラグが立っているのなら
@@ -41,7 +42,7 @@ public class DeathTrap : Trap {
             if (microUSB.GetComponent<microUSB>().GetFlag())
             {
                 //オブジェクトを消す
-                Destroy(gameObject);
+                gameObject.SetActive(false);
             }
         }
     }
