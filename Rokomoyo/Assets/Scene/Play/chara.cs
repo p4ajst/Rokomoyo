@@ -107,7 +107,7 @@ public class chara : MonoBehaviour {
         float time = MoveTime / MoveLengs;
         this.transform.position = Vector3.Lerp(this.gameObject.transform.position, tage_pos, time);
         //進む方向へ向く処理
-        Vector3 view_vec = MusicCordinate - this.gameObject.transform.position;
+        Vector3 view_vec = new Vector3(MusicCordinate.x,this.transform.position.y,MusicCordinate.z) - this.gameObject.transform.position;
         Quaternion newRote = Quaternion.LookRotation(view_vec);
         this.gameObject.transform.rotation = Quaternion.Slerp(this.transform.rotation,newRote,0.2f);
        
