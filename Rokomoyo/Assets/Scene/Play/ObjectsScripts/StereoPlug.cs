@@ -6,7 +6,7 @@ public class StereoPlug : Gimmick {
 
     bool flag = false;
     GameObject obj = null;
-    Notes note;
+    Notes note = null;
 	// Use this for initialization
 	void Start () {
         base.Start();

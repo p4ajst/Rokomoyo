@@ -36,19 +36,44 @@ public class Notes : MonoBehaviour
     /// <summary>
     /// 曲情報
     /// </summary>
-    private MusicList.MusicData soundData;
+    //private MusicList.MusicData soundData;
+
+    private MusicList.MusicData attract;
+    private MusicList.MusicData away;
 
     /// <summary>
     /// 曲のデータのプロパティ
     /// </summary>
-    public MusicList.MusicData SoundData
+    //public MusicList.MusicData SoundData
+    //{
+    //    // 取得
+    //    get
+    //    {
+    //        return soundData;
+    //    }
+    //}
+
+    public MusicList.MusicData Attract
     {
         // 取得
         get
         {
-            return soundData;
+            return attract;
         }
     }
+    public MusicList.MusicData Away
+    {
+        // 取得
+        get
+        {
+            return away;
+        }
+    }
+
+    /// <summary>
+    /// げーむの管理者
+    /// </summary>
+    GameManager gameManager = null;
 
     /// <summary>
     /// キャラクターの管理のクラスのインスタンス
@@ -65,7 +90,8 @@ public class Notes : MonoBehaviour
         // PlayManagerのコンポーネントを取得
         soundManager = obj.GetComponent<SoundManager>();
         // 曲情報の取得
-        soundData = soundManager.GetMusic(type);
+        attract = soundManager.GetMusic(MusicType.ATTRACT);
+        away = soundManager.GetMusic(MusicType.AWAY);
     }
 
     /// <summary>
@@ -76,17 +102,46 @@ public class Notes : MonoBehaviour
     {
         // 音符を設定
         charaManager.SetNotes(this.gameObject.GetComponent<Notes>());
-        // 音を再生させる
-        if(soundManager.ChangeMusic(type, soundData))
+        switch(type)
         {
-            // 音楽の再生
-            soundManager.PlayMusic();
+            case MusicType.ATTRACT:
+                // 音を再生させる
+                if (soundManager.ChangeMusic(type, attract))
+                {
+                    // 音楽の再生
+                    soundManager.PlayMusic();
+                }
+                else
+                {
+                    // 音楽の停止
+                    soundManager.StopMusic();
+                }
+                break;
+            case MusicType.AWAY:
+                // 音を再生させる
+                if (soundManager.ChangeMusic(type, away))
+                {
+                    // 音楽の再生
+                    soundManager.PlayMusic();
+                }
+                else
+                {
+                    // 音楽の停止
+                    soundManager.StopMusic();
+                }
+                break;
         }
-        else
-        {
-            // 音楽の停止
-            soundManager.StopMusic();
-        }
+        //// 音を再生させる
+        //if(soundManager.ChangeMusic(type, soundData))
+        //{
+        //    // 音楽の再生
+        //    soundManager.PlayMusic();
+        //}
+        //else
+        //{
+        //    // 音楽の停止
+        //    soundManager.StopMusic();
+        //}
     }
 
     /// <summary>
@@ -94,17 +149,27 @@ public class Notes : MonoBehaviour
     /// </summary>
     public void FlipNote()
     {
-        if (type == MusicType.NONE)
-        {
-            return;
-        }
         if (type == MusicType.ATTRACT)
         {
             type = MusicType.AWAY;
+            SetNote();
         }
         if (type == MusicType.AWAY)
         {
             type = MusicType.ATTRACT;
+            SetNote();
+        }
+    }
+
+    public void SetNote()
+    {
+        if(type == MusicType.ATTRACT)
+        {
+            GetComponent<Renderer>().material = gameManager.materialPink;
+        }
+        if (type == MusicType.AWAY)
+        {
+            GetComponent<Renderer>().material = gameManager.materialBlue;
         }
     }
 
@@ -123,6 +188,8 @@ public class Notes : MonoBehaviour
     private void Start ()
     {
         InitNotes();
+        GameObject obj = GameObject.Find("GameManager");
+        gameManager = obj.GetComponent<GameManager>();
     }
 
     /// <summary>
