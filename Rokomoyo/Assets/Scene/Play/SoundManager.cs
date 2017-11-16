@@ -42,7 +42,7 @@ public class SoundManager : Singleton<SoundManager>
         // コンポーネントの取得
         music = GetComponent<AudioSource>();
         // 音量の変更
-        music.volume = 0.2f;
+        music.volume = 1.0f;
         // ループを許可する
         music.loop = true;
     }
