@@ -5,17 +5,31 @@ using UnityEngine;
 public class StereoPlug : Gimmick {
 
     bool flag = false;
-    GameObject obj = null;
-    Notes note = null;
+    /// <summary>
+    /// オブジェクトの配列
+    /// </summary>
+    GameObject[] objs = null;
+    /// <summary>
+    /// 音符のList構造の配列
+    /// </summary>
+    List<Notes> notes = null;
+
 	// Use this for initialization
 	void Start () {
         base.Start();
-        obj = GameObject.Find("AttractSounds");
-        note = obj.GetComponent<Notes>();
-    }
 
-	// Update is called once per frame
-	void Update () {
+        // 指定したタグで設定されたオブジェクトを探す
+        objs = GameObject.FindGameObjectsWithTag("Notes");
+        // 探したオブジェクト分foreach構文を回す
+        foreach(GameObject obj in objs)
+        {
+            // Notesのコンポーネントを取得
+            notes.Add(obj.GetComponent<Notes>());
+        }
+    } 
+
+    // Update is called once per frame
+    void Update () {
         base.Update();
 
         //ギミックの上にいるなら
@@ -23,10 +37,12 @@ public class StereoPlug : Gimmick {
         {
             Debug.Log("のってる");
             flag = true;
-            //音符の種類を変える処理
-            note.FlipNote();
-            ////音符の種類を変える処理
-            //sound.FlipNote();
+            // notesの配列分foreach構文を回す
+            foreach (Notes note in notes)
+            {
+                //音符の種類を変える処理
+                note.FlipNote();
+            }
         }
         //トラップから抜けたら
         else if (base.OnFloor() == false)
