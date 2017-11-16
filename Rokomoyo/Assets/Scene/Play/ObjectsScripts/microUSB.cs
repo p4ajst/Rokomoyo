@@ -10,8 +10,6 @@ public class microUSB : Gimmick {
     // Use this for initialization
     override protected void Start () {
         base.Start();
-
-        //deathTrap = GameObject.Find("DeathTrap");
 	}
 
     // Update is called once per frame
@@ -30,5 +28,9 @@ public class microUSB : Gimmick {
     public bool GetFlag()
     {
         return flag;
+    }
+    public void SetFlag(bool _flag)
+    {
+        flag = _flag;
     }
 }

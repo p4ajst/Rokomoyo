@@ -16,5 +16,7 @@ public class Key : Trap {
         base.Update();
         if (OnFloor())
             gameObject.SetActive(false);
+
+        gameObject.transform.Rotate(new Vector3(0, -1, 0));
     }
 }

@@ -14,11 +14,11 @@ public class testCamera : MonoBehaviour {
     {
 		if (Input.GetKey(KeyCode.RightArrow))
         {
-            gameObject.transform.Rotate(new Vector3(0, -1.0f, 0));
+            gameObject.transform.Rotate(new Vector3(0, -0.5f, 0));
         }
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
-            gameObject.transform.Rotate(new Vector3(0, 1.0f, 0));
+            gameObject.transform.Rotate(new Vector3(0, 0.5f, 0));
         }
     }
 }

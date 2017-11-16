@@ -34,6 +34,7 @@ public class USB : Gimmick {
         {
             //移動したことを示す
             flag = true;
+
             //プレイヤーを移動させる
             player.GetComponent<chara>().transform.position = new Vector3(usbB_pos.GetComponent<USBB>().transform.position.x, 0.6f, usbB_pos.GetComponent<USBB>().transform.position.z);
         }

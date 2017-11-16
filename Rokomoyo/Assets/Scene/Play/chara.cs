@@ -107,7 +107,7 @@ public class chara : MonoBehaviour {
         float time = MoveTime / MoveLengs;
         this.transform.position = Vector3.Lerp(this.gameObject.transform.position, tage_pos, time);
         //進む方向へ向く処理
-        Vector3 view_vec = MusicCordinate - this.gameObject.transform.position;
+        Vector3 view_vec = new Vector3(MusicCordinate.x,this.gameObject.transform.position.y,MusicCordinate.z) - this.gameObject.transform.position;
         Quaternion newRote = Quaternion.LookRotation(view_vec);
         this.gameObject.transform.rotation = Quaternion.Slerp(this.transform.rotation,newRote,0.2f);
        
@@ -128,7 +128,7 @@ public class chara : MonoBehaviour {
         Vector3 bAway = new Vector3(this.transform.position.x, this.transform.position.y, -3);
         //座標が離れる音と被っているかどうか
         //被っている場合
-        if (MusicCordinate==this.transform.position)
+        if (MusicCordinate.x==this.transform.position.x&& MusicCordinate.z == this.transform.position.z)
         {
             Quaternion angle = this.transform.rotation;
             float rote = angle.eulerAngles.y;
