@@ -12,7 +12,7 @@ public class StereoPlug : Gimmick {
     /// <summary>
     /// 音符のList構造の配列
     /// </summary>
-    List<Notes> notes = null;
+    List<Notes> notes = new List<Notes>();
 
 	// Use this for initialization
 	void Start () {
@@ -24,7 +24,8 @@ public class StereoPlug : Gimmick {
         foreach(GameObject obj in objs)
         {
             // Notesのコンポーネントを取得
-            notes.Add(obj.GetComponent<Notes>());
+            Notes n = obj.GetComponent<Notes>();
+            notes.Add(n);
         }
     } 
 

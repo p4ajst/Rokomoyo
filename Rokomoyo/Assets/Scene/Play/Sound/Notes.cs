@@ -154,7 +154,7 @@ public class Notes : MonoBehaviour
             type = MusicType.AWAY;
             SetNote();
         }
-        if (type == MusicType.AWAY)
+        else if (type == MusicType.AWAY)
         {
             type = MusicType.ATTRACT;
             SetNote();
