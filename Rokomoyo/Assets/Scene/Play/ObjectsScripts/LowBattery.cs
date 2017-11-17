@@ -9,14 +9,14 @@ public class LowBattery : Trap {
     //一度だけ使わせるようにフラグ管理
     bool used;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    override protected void Start () {
         //基底クラスのStart関数
         base.Start();
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    override protected void Update () {
         //基底クラスのUpdate関数
         base.Update();
 

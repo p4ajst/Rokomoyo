@@ -29,9 +29,17 @@ public class Goal : Trap {
         if (base.OnFloor() == true)
         {
             //シーン遷移する
-            if (key == null)
+            if (key.active == false)
             {
-                Stage.ChangeStage();
+                //ゴールした瞬間にリープモーションでゴールへ動く
+                float MoveTime = Time.deltaTime / 0.5f*2;
+                float Length = Vector3.Distance(player.transform.position,new Vector3(gameObject.transform.position.x, player.transform.position.y, gameObject.transform.position.z));
+                float time = MoveTime / Length;
+                player.transform.position = Vector3.Lerp(player.transform.position, new Vector3(gameObject.transform.position.x, player.transform.position.y, gameObject.transform.position.z),time);
+
+                //プレイヤーとゴールの位置が噛み合ったらシーン遷移
+                if (player.transform.position == new Vector3(gameObject.transform.position.x, player.transform.position.y, gameObject.transform.position.z))
+                    Stage.ChangeStage();
             }
         }
         //いないなら

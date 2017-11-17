@@ -6,16 +6,14 @@ public class microUSB : Gimmick {
 
     //踏んでいるか確認のフラグ
     bool flag = false;
-    
-	// Use this for initialization
-	void Start () {
-        base.Start();
 
-        //deathTrap = GameObject.Find("DeathTrap");
+    // Use this for initialization
+    override protected void Start () {
+        base.Start();
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    override protected void Update () {
         base.Update();
 
         //踏んでいたら
@@ -30,5 +28,9 @@ public class microUSB : Gimmick {
     public bool GetFlag()
     {
         return flag;
+    }
+    public void SetFlag(bool _flag)
+    {
+        flag = _flag;
     }
 }
